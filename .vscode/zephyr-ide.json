@@ -1,0 +1,64 @@
+{
+  "projects": {
+    "blinky": {
+      "rel_path": "blinky",
+      "name": "blinky",
+      "buildConfigs": {
+        "build\\stm32f4_disco": {
+          "relBoardDir": "external\\zephyr\\boards",
+          "board": "stm32f4_disco",
+          "relBoardSubDir": "external\\zephyr\\boards\\st\\stm32f4_disco",
+          "name": "build\\stm32f4_disco",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {
+            "default": {
+              "runner": "default",
+              "name": "default",
+              "args": ""
+            }
+          }
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    },
+    "button": {
+      "rel_path": "button",
+      "name": "button",
+      "buildConfigs": {
+        "build\\rpi_pico\\rp2040": {
+          "relBoardDir": "external\\zephyr\\boards",
+          "board": "rpi_pico/rp2040",
+          "relBoardSubDir": "external\\zephyr\\boards\\raspberrypi\\rpi_pico",
+          "name": "build\\rpi_pico\\rp2040",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {}
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    }
+  }
+}
