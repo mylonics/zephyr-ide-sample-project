@@ -3,52 +3,11 @@
     "blinky": {
       "rel_path": "blinky",
       "name": "blinky",
-      "vars": {
-        "custom_var": "custom_var"
-      },
       "buildConfigs": {
         "build\\stm32f4_disco": {
-          "relBoardDir": "external\\zephyr\\boards",
+          "relBoardSubDir": "st\\stm32f4_disco",
           "board": "stm32f4_disco",
-          "relBoardSubDir": "external\\zephyr\\boards\\st\\stm32f4_disco",
-          "vars": {
-            "jlink_var": "STM32F401RE",
-            "bmp_port": "COM3"
-          },
           "name": "build\\stm32f4_disco",
-          "westBuildArgs": "",
-          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
-          "confFiles": {
-            "config": [],
-            "extraConfig": [],
-            "overlay": [],
-            "extraOverlay": []
-          },
-          "runnerConfigs": {
-            "default": {
-              "runner": "default",
-              "name": "default",
-              "args": ""
-            }
-          }
-        }
-      },
-      "confFiles": {
-        "config": [],
-        "extraConfig": [],
-        "overlay": [],
-        "extraOverlay": []
-      }
-    },
-    "button": {
-      "rel_path": "button",
-      "name": "button",
-      "buildConfigs": {
-        "build\\rpi_pico\\rp2040": {
-          "relBoardDir": "external\\zephyr\\boards",
-          "board": "rpi_pico/rp2040",
-          "relBoardSubDir": "external\\zephyr\\boards\\raspberrypi\\rpi_pico",
-          "name": "build\\rpi_pico\\rp2040",
           "westBuildArgs": "",
           "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
           "confFiles": {
@@ -60,6 +19,34 @@
           "runnerConfigs": {}
         }
       },
+      "twisterConfigs": {},
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    },
+    "button": {
+      "rel_path": "button",
+      "name": "button",
+      "buildConfigs": {
+        "build\\nucleo_f401re": {
+          "relBoardSubDir": "st\\nucleo_f401re",
+          "board": "nucleo_f401re",
+          "name": "build\\nucleo_f401re",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {}
+        }
+      },
+      "twisterConfigs": {},
       "confFiles": {
         "config": [],
         "extraConfig": [],
